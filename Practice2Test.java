@@ -48,8 +48,8 @@ public class Practice2Test {
 		System.out.println("Usage:");
 		System.out.println("* Argument 1 = Array size.");
 		System.out.println("* Argument 2 = Number of searches to execute.");
-		System.out.println("* Argument 3 = Type of search (one of: linear, binrecursive, biniterative).");
-		System.out.println("---------------------------------------------------------------------------");
+		System.out.println("* Argument 3 = Type of search (one of: linear, binary-recursive, binary-iterative).");
+		System.out.println("-----------------------------------------------------------------------------------");
 	}
 
 
@@ -73,7 +73,7 @@ public class Practice2Test {
 	
 	public void timeSearches() {
 		Practice2Factory factory = new Practice2Factory();
-		Practice2Search search = factory.getSearch("linear");
+		Practice2Search search = factory.getSearch(searchType);
 		Random rand = new Random();
 		
 		long totalTime = 0;
